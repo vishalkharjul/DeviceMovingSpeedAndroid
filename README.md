@@ -1,1 +1,1 @@
-# DeviceMovingSpeedAndroid - to calculate device moving speed
+# DeviceMovingSpeedAndroid - to calculate android device moving speed
