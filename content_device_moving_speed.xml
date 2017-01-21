@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.devicemovingspeed.DeviceMovingSpeed"
+    tools:showIn="@layout/activity_device_moving_speed">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Smart Public Transport!!!"
+        android:id="@+id/textView"
+        android:capitalize="words"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BusNo"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:layout_alignRight="@+id/Start_Tracking"
+        android:layout_alignEnd="@+id/Start_Tracking"
+        android:inputType="number"
+        android:hint="Enter BusNo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RouteNo"
+        android:layout_below="@+id/BusNo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp"
+        android:layout_alignRight="@+id/BusNo"
+        android:layout_alignEnd="@+id/BusNo"
+        android:inputType="number"
+        android:hint="Enter RouteNo" />
+
+    <Button android:text="Start Location Tracking"
+        android:id="@+id/Start_Tracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></Button>
+
+    <Button android:text="Stop Location Tracking"
+        android:id="@+id/Stop_Tracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Start_Tracking"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="107dp"></Button>
+
+
+</RelativeLayout>
